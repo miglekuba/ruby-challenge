@@ -20,3 +20,53 @@
 # * Note: You can assume the players will only ever input `rock`,
 #   `paper` or `scissors`.
 
+
+#this code is refactored
+
+puts "Player 1 enter the move"
+player1move = gets.chomp
+
+puts "Player 2 enters the move"
+player2move = gets.chomp
+
+
+if (player1move == "rock" && player2move == "paper" ||
+       player1move == "paper" && player2move == "rock"  ||
+       player1move == "scissors" && player2move == "rock" ||
+       player1move == "paper" && player2move == "scissors" 
+)
+ puts "Player 2 wins!"
+
+elsif player1move == player2move 
+ puts "it's a draw"
+
+else puts "Player 1 wins!"
+
+end
+
+
+#this is the code I wrote at first
+
+# case 
+# when player1move == "rock" && player2move == "paper" then
+#     puts "Player 2 wins"
+# when player1move == "paper" && player2move == "rock" then
+#     puts "Player 2 wins"
+# when player1move == "scissors" && player2move == "scissors" then
+#     puts "It's a draw"
+# when player1move == "rock" && player2move == "rock" then
+#     puts "It's a draw"
+# when player1move == "paper" && player2move == "paper" then
+#     puts "It's a draw"
+# when player1move == "scissors" && player2move == "rock" then 
+#     puts "Player 2 wins"
+# when player1move == "rock" && player2move == "scissors" then
+#     puts "Player 1 wins"
+# when player1move == "paper" && player2move == "scissors" then
+#     puts "Player 2 wins"
+# when player1move == "scissors" && player2move == "paper" then
+#     puts "Player 1 wins"
+# end
+    
+    
+    
